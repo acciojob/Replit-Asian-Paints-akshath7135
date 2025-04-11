@@ -8,7 +8,9 @@
 
 <body>
     <h1>Color Grid</h1>
-    <div id="grid-container">
+    
+    <!-- Fix: Change id="grid-container" to class="grid-container" -->
+    <div class="grid-container">
         <div class="grid-item" id="1">1</div>
         <div class="grid-item" id="2">2</div>
         <div class="grid-item" id="3">3</div>
@@ -19,11 +21,13 @@
         <div class="grid-item" id="8">8</div>
         <div class="grid-item" id="9">9</div>
     </div>
+
     <div>
         <input type="text" id="block_id" placeholder="Enter Block ID (1-9)">
         <input type="text" id="colour_id" placeholder="Enter Color">
         <button id="change_button">Change Color</button>
-        <button id="reset">Reset</button>
+        <!-- Fix: Change id="reset" to id="reset_button" -->
+        <button id="reset_button">Reset</button>
     </div>
 
     <script type="text/javascript" src="./script.js"></script>
